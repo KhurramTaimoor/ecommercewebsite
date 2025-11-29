@@ -1,0 +1,281 @@
+    body { 
+  background-color: #F7FAFC;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#212529;
+  margin: 0;
+}
+a { text-decoration: none; }
+.site-container { max-width: 1180px; }
+    .header-topbar { background: #fff; box-shadow: 0 1px 2px rgba(16,24,40,0.04); }
+.header-brand { color: #0d6efd; font-weight:700; display:flex; align-items:center; gap:.5rem; }
+.header-brand-icon { width:34px; height:34px; background: linear-gradient(135deg,#dbeafe,#bfdbfe); border-radius:6px; display:flex; align-items:center; justify-content:center; color:#075985; font-weight:700;}
+.header-search-input { border-right: 0; border-radius:.5rem 0 0 .5rem; }
+.header-search-btn { border-radius:0 .5rem .5rem 0; }
+.header-icon-group i { font-size:1.15rem; color:#495057; }
+
+/* ========== SUB NAVIGATION ========== */
+.nav-secondary { background:#fff; padding:.45rem 0; border-bottom:1px solid rgba(0,0,0,0.04); }
+.nav-secondary-link { color:#495057; margin-right:.85rem; font-size:.92rem; }
+    header, footer {
+      background: #fff;
+      padding: 20px 0;
+      box-shadow: 0px 1px 6px #eee;
+    }
+    
+    main {
+      display: flex;
+      margin:0px 100px;
+    }
+    .filter-sidebar {
+      width: 250px;
+      background: #fff;
+      padding: 18px;
+      border-radius: 10px;
+
+      margin-right: 32px;
+      font-size: 1em;
+    }
+    .filter-sidebar h3 { margin-top: 14px; }
+    .filter-sidebar ul { list-style: none; padding: 0; }
+    .filter-sidebar ul li { margin: 7px 0; font-size: 0.97em; }
+    .filter-sidebar input[type="checkbox"], 
+    .filter-sidebar input[type="radio"] { margin-right: 5px;}
+    .main-content { flex: 1;
+    margin-top: 20px;
+ }
+
+    .filter-bar {
+      background: white;
+      border: 1px solid #e2e2e2;
+      border-radius: 8px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .item-count {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .verified {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .verified input {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid #bbb;
+      border-radius: 4px;
+      margin-right: 6px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .verified input:checked {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .verified input:checked::after {
+      content: "✔";
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      left: 2px;
+      top: -1px;
+    }
+
+    .dropdown {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 14px;
+      background: white;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .view-toggle {
+      display: flex;
+      gap: 4px;
+    }
+
+    .view-toggle button {
+      background: none;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #555;
+    }
+
+    .view-toggle button.active {
+      background-color: #f1f3f5;
+      border-color: #bbb;
+    }
+
+    .icon {
+      font-size: 14px;
+    }
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .product-card {
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px #e3e3e9;
+      padding: 18px;
+      align-items: flex-start;
+      gap: 22px;
+      position: relative;
+    }
+    .product-card img {
+      width: 150px;
+      height: 150px;
+    }
+    .prod-info {
+      flex: 1;
+    }
+    .prod-info h4 {
+      margin: 0 0 8px 0;
+      font-size: 1.12em;
+      font-weight: 500;
+    }
+    .price {
+      color: #ed1c24;
+      font-weight: bold;
+      margin-right: 11px;
+    }
+    .price del {
+      color: #999;
+      font-weight: normal;
+      margin-left: 6px;
+    }
+    .rating { font-size: 0.95em; margin-top: 5px; margin-bottom: 7px;}
+    .shipping { color: #13c26d; font-weight: 500; }
+    .prod-info p { font-size: 0.97em; margin: 7px 0 3px 0;}
+    .prod-info a { color: #2566ff; text-decoration: none; font-size:0.98em;}
+    .favorite {
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      color: #2566ff;
+      position: absolute;
+      right: 18px; top: 18px;
+      cursor: pointer;
+    }
+    .pagination {
+      margin: 30px auto;
+      display: flex;
+      gap: 7px;
+      justify-content: flex-end;
+    }
+    .newsletter {
+      background: #f8f8f9;
+      padding: 30px 48px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .newsletter input[type="email"] { padding: 7px 13px; margin-right: 9px;}
+    .newsletter button { padding: 7px 18px; background: #2566ff; color: #fff; border: none; border-radius: 4px;}
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 32px 48px;
+      background: #fff;
+      justify-content: space-between;
+    }
+    .footer-nav h5 { margin-bottom: 8px; font-size: 1em;}
+    .footer-nav a { display:block; color: #2566ff; margin-bottom:6px; font-size:0.99em; text-decoration:none;}
+    .footer-bottom {
+      background: #eeeeee;
+      padding: 12px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.97em;
+    }
+    /* GRID MODE STYLING */
+/* ========== GRID MODE STYLING ========== */
+
+/* 1. Force 3 columns layout */
+.main-content.grid-mode .product-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 items per row */
+  gap: 24px;
+}
+
+/* 2. Style the card for vertical layout */
+.main-content.grid-mode .product-card {
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align text to the left (not center) */
+  padding: 20px;
+  height: 100%; /* Ensure all cards are same height */
+  position: relative;
+}
+
+/* 3. Style the Image (Centered) */
+.main-content.grid-mode .product-card img {
+  width: 100%;
+  max-width: 160px; /* Limit image size */
+  height: 160px;
+  object-fit: contain; /* Keep image aspect ratio */
+  margin: 0 auto 15px auto; /* Center the image horizontally */
+  display: block;
+}
+
+/* 4. Fix the text container */
+.main-content.grid-mode .prod-info {
+  width: 100%;
+}
+
+/* 5. Hide the long description in grid view */
+.main-content.grid-mode .prod-info p {
+  display: none; 
+}
+
+/* 6. Fix Heart Icon position */
+.main-content.grid-mode .favorite {
+  top: 15px;
+  right: 15px;
+  background: #f8f9fa; /* Optional: adds a small background to icon like screenshot */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== RESPONSIVENESS ========== */
+/* Ensure it doesn't break on mobile/tablets */
+@media (max-width: 991px) {
+  .main-content.grid-mode .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 items on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content.grid-mode .product-list {
+    grid-template-columns: 1fr; /* 1 item on mobile */
+  }
+}
